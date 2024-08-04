@@ -125,3 +125,13 @@ function nextSequence() {
   level++;
   $("#level-title").text(`Level: ${level}`);
 }
+
+
+// Start or reset game
+function gameRestart() {
+  gamePattern = [];
+  userClickedPattern = [];
+  level = 0;
+  $("#start-button").hide(); // Hide the start button once the game starts
+  nextSequence();
+}
