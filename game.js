@@ -1,6 +1,22 @@
-// eventlistener for game restart
+// Check if the user is on a mobile device
+
+if (/Mobi|Android/i.test(navigator.userAgent)) {
+
+
+  // change the conent of a tile for mobile device
+
+  $("#level-title").text("Touch the Blank Place to Start");
+
+}
+
+// eventlistener for game restart based on the Device
 
 $(document).on("keypress", () => gameRestart());
+
+$(document).on("touchstart", () => gameRestart());
+
+
+
 
 // buttonColor list
 
@@ -61,10 +77,11 @@ function checkAnswer(currentLevel) {
 
 //method used to end the game
 function gameOver() {
-  //select the h1 and update it to game over
+    // Check if the user is on a mobile device
+  const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+  //select the h1 and update it to game over based on the device type
   $("#level-title").text() !== "Game Over, Press Any Key to Restart"
-    ? $("#level-title").text("Game Over, Press Any Key to Restart")
-    : "";
+    ? $("#level-title").text(isMobile ? "Game Over, Touch the Blank Place to Restart" : "Game Over, Press Any Key to Restart") : " ";
   //plays wrong sound after game over
   playSound("wrong");
   //animate the body on game over
