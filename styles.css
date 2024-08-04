@@ -51,17 +51,3 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
-
-.start-button {
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 1.5rem;
-  background-color: #FEF2BF;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.start-button:hover {
-  background-color: #f0e68c;
-}
