@@ -83,7 +83,9 @@ function checkAnswer(currentLevel) {
 
 //method used to end the game
 function gameOver() {
-  //select the h1 and update it to game over
+  // Check if the user is on a mobile device
+  const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+  //select the h1 and update it to game over based on the device type
   $("#level-title").text() !== "Game Over, Press Any Key to Restart"
     ? $("#level-title").text(isMobile ? "Game Over, Tap the Start Button to Restart" 
       : "Game Over, Press Any Key to Restart") : " ";
