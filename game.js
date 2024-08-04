@@ -18,17 +18,11 @@ if (isMobile()) {
 // Start button event listener for mobile
 $("#start-button").on("click", () => gameRestart());
 
-// eventlistener for game restart
 
 
 // Event listener for game restart
 $(document).on("keypress", () => gameRestart());
  
-
-
-// eventlistener for game restart
-
-$(document).on("keypress", () => gameRestart());
 
 
 // buttonColor list
