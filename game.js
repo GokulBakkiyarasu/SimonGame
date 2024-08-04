@@ -84,8 +84,8 @@ function checkAnswer(currentLevel) {
 //method used to end the game
 function gameOver() {
   //select the h1 and update it to game over
-  $("#level-title").text() !== "Game Over, Tap the Start Button to Restart"
-    ? $("#level-title").text(isMobile ? "Game Over, Touch the Blank Place to Restart" 
+  $("#level-title").text() !== "Game Over, Press Any Key to Restart"
+    ? $("#level-title").text(isMobile ? "Game Over, Tap the Start Button to Restart" 
       : "Game Over, Press Any Key to Restart") : " ";
   //plays wrong sound after game over
   playSound("wrong");
