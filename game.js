@@ -11,7 +11,7 @@ if (isMobile()) {
   $("#level-title").text("Tap the Start Button to Play");
   $("#start-button").show();
 } else {
-  $("#level-title").text("Press A Key to Start");
+  $("#level-title").text("Press Any Key to Start");
   $("#start-button").hide();
 }
 
